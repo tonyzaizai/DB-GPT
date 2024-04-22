@@ -10,6 +10,8 @@ from ..expand.dashboard_assistant_agent import DashboardAssistantAgent
 from ..expand.data_scientist_agent import DataScientistAgent
 from ..expand.plugin_assistant_agent import PluginAssistantAgent
 from ..expand.summary_assistant_agent import SummaryAssistantAgent
+from ..expand.brand_planner import BrandPlanAgent
+from ..expand.brand_planner_cru import BrandPlanCruAgent
 from .agent import Agent
 
 logger = logging.getLogger(__name__)
@@ -100,8 +102,10 @@ class AgentManager:
 
 agent_manager = AgentManager()
 
-agent_manager.register_agent(CodeAssistantAgent)
-agent_manager.register_agent(DashboardAssistantAgent)
-agent_manager.register_agent(DataScientistAgent)
-agent_manager.register_agent(SummaryAssistantAgent)
-agent_manager.register_agent(PluginAssistantAgent)
+# agent_manager.register_agent(CodeAssistantAgent)
+# agent_manager.register_agent(DashboardAssistantAgent)
+# agent_manager.register_agent(DataScientistAgent)
+# agent_manager.register_agent(SummaryAssistantAgent)
+# agent_manager.register_agent(PluginAssistantAgent)
+agent_manager.register_agent(BrandPlanAgent)
+agent_manager.register_agent(BrandPlanCruAgent)

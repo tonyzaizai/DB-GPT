@@ -8,8 +8,8 @@ class UserProxyAgent(ConversableAgent):
     That can execute code and provide feedback to the other agents.
     """
 
-    name = "User"
-    profile: str = "Human"
+    name = "老板"
+    profile: str = "老板-潘小迪"
 
     desc: str = (
         "A human admin. Interact with the planner to discuss the plan. "
